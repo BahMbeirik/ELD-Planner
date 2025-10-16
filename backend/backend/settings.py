@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-=cb8_!7xd4ygx=8-nx9r*m3ho$t7cr^$_c!_d=!i6-=303)0xm'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -54,11 +54,11 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
+    "https://eld-planner-beige.vercel.app",
     "http://localhost:3000",
     "http://127.0.0.1:3000",
-    "https://eld-planner-beige.vercel.app/",
 ]
-
+CORS_ALLOW_CREDENTIALS = True
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.AllowAny',

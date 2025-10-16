@@ -48,7 +48,7 @@ function App() {
   const handleTripSubmit = async (formData) => {
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:8000/api/trips/', {
+      const response = await fetch('https://eld-planner-y3cx.onrender.com/api/trips/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

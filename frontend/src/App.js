@@ -33,7 +33,7 @@ function App() {
 
   const fetchAllTrips = async () => {
     try {
-      const response = await fetch('http://localhost:8000/api/trips/');
+      const response = await fetch('https://eld-planner-y3cx.onrender.com/api/trips/');
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
